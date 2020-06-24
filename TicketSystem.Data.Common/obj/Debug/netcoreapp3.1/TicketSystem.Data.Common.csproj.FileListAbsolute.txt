@@ -1,0 +1,9 @@
+F:\Github\TicketSystem.Data.Common\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.deps.json
+F:\Github\TicketSystem.Data.Common\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.dll
+F:\Github\TicketSystem.Data.Common\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.pdb
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.csprojAssemblyReference.cache
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.csproj.CoreCompileInputs.cache
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.AssemblyInfoInputs.cache
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.AssemblyInfo.cs
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.dll
+F:\Github\TicketSystem.Data.Common\obj\Debug\netcoreapp3.1\TicketSystem.Data.Common.pdb

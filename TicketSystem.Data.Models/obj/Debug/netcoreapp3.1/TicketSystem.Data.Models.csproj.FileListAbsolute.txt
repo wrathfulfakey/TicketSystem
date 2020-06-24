@@ -1,0 +1,12 @@
+F:\Github\TicketSystem.Data.Models\bin\Debug\netcoreapp3.1\TicketSystem.Data.Models.deps.json
+F:\Github\TicketSystem.Data.Models\bin\Debug\netcoreapp3.1\TicketSystem.Data.Models.dll
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.csprojAssemblyReference.cache
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.AssemblyInfoInputs.cache
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.AssemblyInfo.cs
+F:\Github\TicketSystem.Data.Models\bin\Debug\netcoreapp3.1\TicketSystem.Data.Models.pdb
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.csproj.CoreCompileInputs.cache
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.dll
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.pdb
+F:\Github\TicketSystem.Data.Models\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.dll
+F:\Github\TicketSystem.Data.Models\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.pdb
+F:\Github\TicketSystem.Data.Models\obj\Debug\netcoreapp3.1\TicketSystem.Data.Models.csproj.CopyComplete

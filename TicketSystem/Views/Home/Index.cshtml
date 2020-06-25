@@ -22,7 +22,9 @@
             <td>@user.UserName</td>
             <td>@user.PhoneNumber</td>
             <td>@user.Credits</td>
-            <td class="btn btn-light">Send</td>
+            <td class="btn btn-info"><a asp-controller="Home" asp-action="SendGreeting" 
+                                        asp-route-senderUsername="@this.User.Identity.Name"
+                                        asp-route-receiverUsername="@user.UserName">Greet</a></td>
         </tr>
     }
 </table>

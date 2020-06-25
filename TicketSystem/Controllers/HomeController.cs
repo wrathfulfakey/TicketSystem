@@ -39,6 +39,22 @@
             return this.View(viewModel);
         }
 
+        [HttpGet]
+        public IActionResult SendGreeting()
+        {
+
+
+            return this.View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SendGreeting(string senderUsername, string receiverUsername, string content)
+        {
+            await this.usersService.SendGreeting(senderUsername, receiverUsername, content);
+
+            return this.RedirectToAction(nameof(Action));
+        }
+
         public IActionResult Privacy()
         {
             return View();

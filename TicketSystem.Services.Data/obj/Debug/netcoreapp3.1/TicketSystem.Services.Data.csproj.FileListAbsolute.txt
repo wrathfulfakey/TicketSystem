@@ -1,0 +1,16 @@
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Services.Data.deps.json
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Services.Data.dll
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Services.Data.pdb
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.dll
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Data.Models.dll
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Services.Mapping.dll
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Data.Common.pdb
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Data.Models.pdb
+F:\Github\TicketSystem\TicketSystem.Services.Data\bin\Debug\netcoreapp3.1\TicketSystem.Services.Mapping.pdb
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.csprojAssemblyReference.cache
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.AssemblyInfoInputs.cache
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.AssemblyInfo.cs
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.csproj.CoreCompileInputs.cache
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.csproj.CopyComplete
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.dll
+F:\Github\TicketSystem\TicketSystem.Services.Data\obj\Debug\netcoreapp3.1\TicketSystem.Services.Data.pdb

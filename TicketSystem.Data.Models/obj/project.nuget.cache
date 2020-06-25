@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gva15fyiqFvaK99wzSMW4o3Wzh5WASRmjCAoK1gsG8BNm2+a2yMFixyZlpWb7uOYO2v4A6Ss8mlS2hP0P4sCfA==",
+  "dgSpecHash": "BDxWlp+Zy8u0jVo7tmgseEV47d0Pzf7Oc4oIBBSFvKlYWnclEopQfJfyZxjJWC3+KlI70R8kLuRbzxAdwfZ1UA==",
   "success": true,
-  "projectFilePath": "F:\\Github\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
+  "projectFilePath": "F:\\Github\\TicketSystem\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rokud\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",
     "C:\\Users\\rokud\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.5\\microsoft.aspnetcore.cryptography.keyderivation.3.1.5.nupkg.sha512",

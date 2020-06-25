@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TicketSystem.Data.Common\TicketSystem.Data.Common.csproj" />
+    <ProjectReference Include="..\TicketSystem.Data.Models\TicketSystem.Data.Models.csproj" />
+    <ProjectReference Include="..\TicketSystem.Services.Mapping\TicketSystem.Services.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

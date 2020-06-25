@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github\\TicketSystem.Common\\TicketSystem.Common.csproj",
+      "projectUniqueName": "F:\\Github\\TicketSystem\\TicketSystem.Common\\TicketSystem.Common.csproj",
       "projectName": "TicketSystem.Common",
-      "projectPath": "F:\\Github\\TicketSystem.Common\\TicketSystem.Common.csproj",
+      "projectPath": "F:\\Github\\TicketSystem\\TicketSystem.Common\\TicketSystem.Common.csproj",
       "packagesPath": "C:\\Users\\rokud\\.nuget\\packages\\",
-      "outputPath": "F:\\Github\\TicketSystem.Common\\obj\\",
+      "outputPath": "F:\\Github\\TicketSystem\\TicketSystem.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

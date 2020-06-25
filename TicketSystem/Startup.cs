@@ -3,6 +3,7 @@ namespace TicketSystem
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Reflection;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Builder;
@@ -21,6 +22,10 @@ namespace TicketSystem
     using TicketSystem.Data.Models;
     using TicketSystem.Data.Repositories;
     using TicketSystem.Data.Seeding;
+    using TicketSystem.Models;
+    using TicketSystem.Services.Data;
+    using TicketSystem.Services.Data.Interfaces;
+    using TicketSystem.Services.Mapping;
 
     public class Startup
     {
@@ -61,11 +66,16 @@ namespace TicketSystem
             services.AddScoped(typeof(IDeletableEntityRepository<>), typeof(EfDeletableEntityRepository<>));
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
+
+            // Application services
+            services.AddTransient<IUsersService, UsersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            AutoMapperConfig.RegisterMappings(typeof(ErrorViewModel).GetTypeInfo().Assembly);
+
             // Seed data on application startup
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
@@ -85,6 +95,7 @@ namespace TicketSystem
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -96,12 +107,11 @@ namespace TicketSystem
 
             app.UseEndpoints(
                 endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
-            });
+                {
+                    endpoints.MapControllerRoute("areaRoute", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+                    endpoints.MapRazorPages();
+                });
         }
     }
 }

@@ -1,26 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using TicketSystem.Models;
-
-namespace TicketSystem.Controllers
+﻿namespace TicketSystem.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+    using TicketSystem.Models;
+    using TicketSystem.Models.Index;
+    using TicketSystem.Services.Data.Interfaces;
+
     public class HomeController : Controller
     {
+        private readonly IUsersService usersService;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(
+            IUsersService usersService,
+            ILogger<HomeController> logger)
         {
+            this.usersService = usersService;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var viewModel = new IndexViewModel
+            {
+                Users = this.usersService.GetAll<IndexUserViewModel>(),
+            };
+
+            if (viewModel == null)
+            {
+                return this.NotFound();
+            }
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()

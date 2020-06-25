@@ -1,0 +1,64 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="col-md-12">
+    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <h4>Create a new account.</h4>
+
+        <hr />
+        <p style="text-align:center">Inputs with <b>*</b> are required.</p>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-3 top-buffer form-group">
+                <label asp-for="Input.UserName"></label>
+                <input asp-for="Input.UserName" class="form-control" placeholder="Username..." />
+                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+            </div>
+            <div class="col-md-3 top-buffer form-group">
+                <label asp-for="Input.PhoneNumber"></label>
+                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Phone Number..." />
+                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 top-buffer form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" placeholder="Email..." />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-buffer form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" placeholder="Password..." />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 top-buffer form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password..." />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 top-buffer form-group">
+                <label asp-for="Input.FirstName"></label>
+                <input asp-for="Input.FirstName" class="form-control" placeholder="First Name..." />
+                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 top-buffer form-group">
+                <label asp-for="Input.LastName"></label>
+                <input asp-for="Input.LastName" class="form-control" placeholder="Last Name..." />
+                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -834,11 +834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
+      "projectUniqueName": "F:\\Github\\TicketSystem\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
       "projectName": "TicketSystem.Data.Models",
-      "projectPath": "F:\\Github\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
+      "projectPath": "F:\\Github\\TicketSystem\\TicketSystem.Data.Models\\TicketSystem.Data.Models.csproj",
       "packagesPath": "C:\\Users\\rokud\\.nuget\\packages\\",
-      "outputPath": "F:\\Github\\TicketSystem.Data.Models\\obj\\",
+      "outputPath": "F:\\Github\\TicketSystem\\TicketSystem.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -857,8 +857,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\Github\\TicketSystem.Data.Common\\TicketSystem.Data.Common.csproj": {
-              "projectPath": "F:\\Github\\TicketSystem.Data.Common\\TicketSystem.Data.Common.csproj"
+            "F:\\Github\\TicketSystem\\TicketSystem.Data.Common\\TicketSystem.Data.Common.csproj": {
+              "projectPath": "F:\\Github\\TicketSystem\\TicketSystem.Data.Common\\TicketSystem.Data.Common.csproj"
             }
           }
         }
@@ -892,7 +892,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

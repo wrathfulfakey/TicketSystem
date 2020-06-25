@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem", "TicketSystem.csproj", "{F10C8376-C2E3-409F-849C-6BEEACEE3B53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem", "TicketSystem.csproj", "{F10C8376-C2E3-409F-849C-6BEEACEE3B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data", "..\TicketSystem.Data\TicketSystem.Data.csproj", "{2EB3310D-E02F-486C-A962-3EB497976AEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem.Data", "..\TicketSystem.Data\TicketSystem.Data.csproj", "{2EB3310D-E02F-486C-A962-3EB497976AEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{FB96CE9B-6B0D-459E-9E09-648F2E843965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data.Models", "..\TicketSystem.Data.Models\TicketSystem.Data.Models.csproj", "{604C20E9-5DAF-4D21-A1FD-6C4E0B9A1874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem.Data.Models", "..\TicketSystem.Data.Models\TicketSystem.Data.Models.csproj", "{604C20E9-5DAF-4D21-A1FD-6C4E0B9A1874}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Data.Common", "..\TicketSystem.Data.Common\TicketSystem.Data.Common.csproj", "{30356A3C-DF82-4E9F-8863-606E7A4EDDFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem.Data.Common", "..\TicketSystem.Data.Common\TicketSystem.Data.Common.csproj", "{30356A3C-DF82-4E9F-8863-606E7A4EDDFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Common", "..\TicketSystem.Common\TicketSystem.Common.csproj", "{F0C08D47-7144-423F-8F91-658054BAC6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem.Common", "..\TicketSystem.Common\TicketSystem.Common.csproj", "{F0C08D47-7144-423F-8F91-658054BAC6C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B0BC2A86-17D3-40B3-A033-6183F014D43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Services.Mapping", "..\TicketSystem.Services.Mapping\TicketSystem.Services.Mapping.csproj", "{3C143E85-EBA2-4A3A-A310-FDD588A8B403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystem.Services.Data", "..\TicketSystem.Services.Data\TicketSystem.Services.Data.csproj", "{CEE7F68F-B49D-492F-82DD-99EE282F2757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,14 @@ Global
 		{F0C08D47-7144-423F-8F91-658054BAC6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0C08D47-7144-423F-8F91-658054BAC6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0C08D47-7144-423F-8F91-658054BAC6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C143E85-EBA2-4A3A-A310-FDD588A8B403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C143E85-EBA2-4A3A-A310-FDD588A8B403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C143E85-EBA2-4A3A-A310-FDD588A8B403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C143E85-EBA2-4A3A-A310-FDD588A8B403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE7F68F-B49D-492F-82DD-99EE282F2757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE7F68F-B49D-492F-82DD-99EE282F2757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE7F68F-B49D-492F-82DD-99EE282F2757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE7F68F-B49D-492F-82DD-99EE282F2757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +63,8 @@ Global
 		{2EB3310D-E02F-486C-A962-3EB497976AEF} = {FB96CE9B-6B0D-459E-9E09-648F2E843965}
 		{604C20E9-5DAF-4D21-A1FD-6C4E0B9A1874} = {FB96CE9B-6B0D-459E-9E09-648F2E843965}
 		{30356A3C-DF82-4E9F-8863-606E7A4EDDFA} = {FB96CE9B-6B0D-459E-9E09-648F2E843965}
+		{3C143E85-EBA2-4A3A-A310-FDD588A8B403} = {B0BC2A86-17D3-40B3-A033-6183F014D43C}
+		{CEE7F68F-B49D-492F-82DD-99EE282F2757} = {B0BC2A86-17D3-40B3-A033-6183F014D43C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92048332-4979-4B89-9742-24CDD348F512}

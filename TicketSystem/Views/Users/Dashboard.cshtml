@@ -1,0 +1,37 @@
+﻿@model TicketSystem.Models.Users.UserDashboardViewModel
+
+@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Phone Number</th>
+        <th>Credits</th>
+        <th>Transactions</th>
+    </tr>
+    <tr>
+        <td>@Model.UserName</td>
+        <td>@Model.PhoneNumber</td>
+        <td>@Model.Credits</td>
+        <td>
+            @foreach (var transaction in Model.Transactions)
+            {
+                @if (transaction == null)
+                {
+                    <p>NO TRANSACTIONS</p>
+                }
+                else
+                {
+                    <p><b>Sender: </b>@transaction.SenderUserUserName</p>
+                    <p><b>Receiver: </b>@transaction.ReceiverUserUserName</p>
+                    <p><b>Send on: </b>@transaction.CreatedOn.ToShortDateString()</p>
+                    <p><b>Greeting content: </b>@transaction.Comment</p>
+                    <hr />
+                }
+            }
+        </td>
+    </tr>
+</table>
+

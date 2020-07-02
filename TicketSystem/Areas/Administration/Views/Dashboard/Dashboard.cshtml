@@ -1,0 +1,39 @@
+﻿@model TicketSystem.Areas.Administration.ViewModels.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Phone Number</th>
+        <th>Credits</th>
+        <th>Transactions</th>
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.PhoneNumber</td>
+            <td>@user.Credits</td>
+            <td>
+                @if (user.Transactions == null)
+                {
+                    <p>NO TRANSACTIONS</p>
+                }
+                else
+                {
+                    @foreach (var transaction in user.Transactions)
+                    {
+                        <p><b>Sent on: </b>@transaction.CreatedOn.ToShortDateString()</p>
+                        <p><b>Sender: </b>@transaction.SenderUserUserName</p>
+                        <p><b>Receiver: </b>@transaction.ReceiverUserUserName</p>
+                        <p><b>Greeting content: </b>@transaction.Comment</p>
+                        <hr />
+                    }
+                }
+            </td>
+        </tr>
+    }
+</table>

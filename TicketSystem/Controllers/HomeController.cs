@@ -40,19 +40,29 @@
         }
 
         [HttpGet]
-        public IActionResult SendGreeting()
+        public IActionResult SendGreeting(string senderUsername, string receiverUsername, string phoneNumber)
         {
+            var viewModel = new GreetingCreateInputModel
+            {
+                SenderUser = senderUsername,
+                ReceiverUser = receiverUsername,
+                PhoneNumber = phoneNumber,
+            };
 
-
-            return this.View();
+            return this.View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> SendGreeting(string senderUsername, string receiverUsername, string content)
+        public async Task<IActionResult> SendGreeting(GreetingCreateInputModel input)
         {
-            await this.usersService.SendGreeting(senderUsername, receiverUsername, content);
+            if (!this.ModelState.IsValid)
+            {
+                return this.View(input);
+            }
 
-            return this.RedirectToAction(nameof(Action));
+            await this.usersService.SendGreeting(input.SenderUser, input.ReceiverUser, input.Comment);
+
+            return this.RedirectToAction(nameof(Index));
         }
 
         public IActionResult Privacy()

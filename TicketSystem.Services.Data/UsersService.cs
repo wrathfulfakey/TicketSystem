@@ -74,8 +74,6 @@
             {
                 sender.Credits -= 10;
                 receiver.Credits += 10;
-                sender.Transactions.Add(transaction);
-                receiver.Transactions.Add(transaction);
 
                 await transactionsRepository.AddAsync(transaction);
                 await transactionsRepository.SaveChangesAsync();

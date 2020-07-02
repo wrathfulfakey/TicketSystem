@@ -186,3 +186,8 @@ F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity
 F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 F:\Github\TicketSystem\TicketSystem\bin\Debug\netcoreapp3.1\TicketSystem.Services.Data.dll
 F:\Github\TicketSystem\TicketSystem\bin\Debug\netcoreapp3.1\TicketSystem.Services.Data.pdb
+F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Views\Home\SendGreeting.cshtml.g.cs
+F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Views\Users\Dashboard.cshtml.g.cs
+F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Dashboard\Dashboard.cshtml.g.cs
+F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\_ViewImports.cshtml.g.cs
+F:\Github\TicketSystem\TicketSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\_ViewStart.cshtml.g.cs

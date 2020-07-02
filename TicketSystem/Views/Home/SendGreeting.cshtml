@@ -1,0 +1,33 @@
+﻿@model TicketSystem.Models.Index.GreetingCreateInputModel
+
+@{
+    ViewData["Title"] = "Greet Someone";
+}
+
+<h1 class="display-4 text-center">@this.ViewData["Title"]</h1>
+<hr />
+<form method="post" asp-controller="Home" asp-action="SendGreeting">
+    <div class="row">
+        <div class="col-md-4 top-buffer form-group disabled" style="align-content:center">
+            <label asp-for="@Model.SenderUser"></label>
+            <input asp-for="@Model.SenderUser" class="form-control" placeholder="@Model.SenderUser" disabled/>
+            <span asp-validation-for="@Model.SenderUser" class="text-danger"></span>
+        </div>
+        <div class="col-md-4 top-buffer form-group disabled" style="align-content:center">
+            <label asp-for="@Model.ReceiverUser"></label>
+            <input asp-for="@Model.ReceiverUser" class="form-control" placeholder="@Model.ReceiverUser" disabled />
+            <span asp-validation-for="@Model.ReceiverUser" class="text-danger"></span>
+        </div>
+        <div class="col-md-4 top-buffer form-group disabled" style="align-content:center">
+            <label asp-for="@Model.PhoneNumber"></label>
+            <input asp-for="@Model.PhoneNumber" class="form-control" placeholder="@Model.PhoneNumber" disabled/>
+            <span asp-validation-for="@Model.PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="col-md-12 top-buffer form-group">
+            <label asp-for="@Model.Comment"></label>
+            <textarea asp-for="@Model.Comment" class="form-control" placeholder="Greeting content..."></textarea>
+            <span asp-validation-for="@Model.Comment" class="text-danger"></span>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Send" />
+    </div>
+</form>

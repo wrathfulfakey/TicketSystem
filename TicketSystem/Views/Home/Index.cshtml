@@ -8,23 +8,127 @@
     <h1 class="display-4">Welcome!</h1>
 </div>
 
+<div class="wrapper">
+    <div class="header">
+        <div class="title">
+            Send Greeting Through Phone Number
+        </div>
 
-<table>
-    <tr>
-        <th>Username</th>
-        <th>Phone Number</th>
-        <th>Credits</th>
-        <th>Send Credits</th>
-    </tr>
-    @foreach (var user in Model.Users)
-    {
+        <div class="search_box">
+            <input type="text" id="search_input" placeholder="Fliter Table Using Phone Number">
+        </div>
+    </div>
+
+    <div class="table_wrap">
+        <div class="table_header">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="name">
+                            <span>Username</span>
+                        </div>
+                        <div class="phone">
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="credits">
+                            <span>Credits</span>
+                        </div>
+                        <div class="greet">
+                            <span>Send Greet</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="table_body">
+            <ul>
+                @foreach (var user in Model.Users)
+                {
+                    <li>
+                        <div class="item">
+                            <div class="name">
+                                <span>@user.UserName</span>
+                            </div>
+                            <div class="phone">
+                                <span>@user.PhoneNumber</span>
+                            </div>
+                            <div class="credits">
+                                <span>@user.Credits</span>
+                            </div>
+                            @if (this.User.Identity.IsAuthenticated)
+                            {
+                                <div class="greet">
+                                    <span>
+                                        <a asp-controller="Home" asp-action="SendGreeting"
+                                           asp-route-senderUsername="@this.User.Identity.Name"
+                                           asp-route-receiverUsername="@user.UserName"
+                                           asp-route-phoneNumber="@user.PhoneNumber"
+                                           class="btn btn-outline-info">
+                                            Greet
+                                        </a>
+                                    </span>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="greet">
+                                    <span>
+                                        <a asp-controller="Home" asp-action="SendGreeting"
+                                           asp-route-senderUsername="@this.User.Identity.Name"
+                                           asp-route-receiverUsername="@user.UserName"
+                                           asp-route-phoneNumber="@user.PhoneNumber"
+                                           class="btn btn-outline-info disabled">
+                                            Greet
+                                        </a>
+                                    </span>
+                                </div>
+                            }
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</div>
+
+
+@* <table>
         <tr>
-            <td>@user.UserName</td>
-            <td>@user.PhoneNumber</td>
-            <td>@user.Credits</td>
-            <td class="btn btn-info"><a asp-controller="Home" asp-action="SendGreeting" 
-                                        asp-route-senderUsername="@this.User.Identity.Name"
-                                        asp-route-receiverUsername="@user.UserName">Greet</a></td>
+            <th>Username</th>
+            <th>Phone Number</th>
+            <th>Credits</th>
+            <th>Send Greet</th>
         </tr>
-    }
-</table>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td id="username">@user.UserName</td>
+                <td id="phoneNumber">@user.PhoneNumber</td>
+                <td id="credits">@user.Credits</td>
+                @if (this.User.Identity.IsAuthenticated)
+                {
+                    <td class="btn btn-outline-info">
+                        <a asp-controller="Home" asp-action="SendGreeting"
+                           asp-route-senderUsername="@this.User.Identity.Name"
+                           asp-route-receiverUsername="@user.UserName"
+                           asp-route-phoneNumber="@user.PhoneNumber">Greet</a>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <button class="btn btn-outline-info"
+                                asp-controller="Home" asp-action="SendGreeting"
+                                asp-route-senderUsername="@this.User.Identity.Name"
+                                asp-route-receiverUsername="@user.UserName"
+                                asp-route-phoneNumber="@user.PhoneNumber" disabled>
+                            Greet
+                        </button>
+                    </td>
+                }
+            </tr>
+        }
+    </table>*@

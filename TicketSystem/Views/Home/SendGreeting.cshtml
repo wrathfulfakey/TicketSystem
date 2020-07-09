@@ -6,7 +6,12 @@
 
 <h1 class="display-4 text-center">@this.ViewData["Title"]</h1>
 <hr />
-<form method="post" asp-controller="Home" asp-action="SendGreeting">
+<form method="post" 
+      asp-controller="Home" 
+      asp-action="SendGreeting" 
+      asp-route-SenderUser="@Model.SenderUser"
+      asp-route-ReceiverUser="@Model.ReceiverUser"
+      asp-route-PhoneNumber="@Model.PhoneNumber">
     <div class="row">
         <div class="col-md-4 top-buffer form-group disabled" style="align-content:center">
             <label asp-for="@Model.SenderUser"></label>
